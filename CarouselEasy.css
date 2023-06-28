@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+.hero .carousel{
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
+}
+
+.carousel img{
+    -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
+    width: 500px;
+    height: 500px;
+}
+
+.hero .carousel img{
+    max-height: 300px;
+}
+h1{
+    position: absolute;
+    bottom: -50px; /* Adjust the vertical position of the text */
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-size: 25px; /* Adjust the font size to your liking */
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 999;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  
+  .navbar li a:hover {
+    color: gold;
+  }
+  
+  .navbar li a.active {
+    color: silver;
+  }
+  
+  .navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .navbar .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .dropdown-content a:hover {
+    background-color: #555;
+  }
+  
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
